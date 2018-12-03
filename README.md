@@ -5,7 +5,7 @@ This is a collection of utility and mechanic scripts for FiveM. Below you will f
 
 * **mc_secpass**
 
-   This is a utility to introduce cryptographically secure password hashing to FiveM. I contains two utility method exports:
+   This is a utility to introduce cryptographically secure password hashing to FiveM. It uses PBKDF2 to hash passwords to be stored in a database. It does not do this on its own, its purpose is to provide the hashing and verification for other modules to utilize. It contains two utility method exports:
 
    * hashPassword - creates a secure password hash that can later be verified if stored to a database - returns a string
    * verifyPassword - verifies a password guess against a stored hashed password - returns a bool
@@ -21,3 +21,8 @@ This is a collection of utility and mechanic scripts for FiveM. Below you will f
       'mc_secpass'
    }
    ```
+   
+   **Usage**
+   
+   * exports['mc_secpass']:hasPassword(password)
+   * exports['mc_secpass']:verifyPassword(guess, password)
