@@ -24,7 +24,7 @@ This is a collection of utility and mechanic scripts for FiveM. Below you will f
    
    **Usage**
    
-   * exports['mc_secpass']:hasPassword(password)
+   * exports['mc_secpass']:hashPassword(password)
    * exports['mc_secpass']:verifyPassword(guess, password)
    
    ![Example](https://i.ibb.co/92QCYY0/secpassexamplecode.png "Example Code")
