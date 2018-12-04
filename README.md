@@ -1,9 +1,4 @@
-# Minion Public Scripts
-## A collection of scripts for FiveM
-
-This is a collection of utility and mechanic scripts for FiveM. Below you will find the list of scripts and instructions.
-
-* **mc_secpass**
+# MC_SecPass
 
    This is a utility to introduce cryptographically secure password hashing to FiveM. It uses PBKDF2 to hash passwords to be stored in a database. It does not store data on its own, its purpose is to provide the hashing and verification for other modules to utilize. It contains two utility method exports:
 
